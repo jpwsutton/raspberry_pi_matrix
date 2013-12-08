@@ -29,19 +29,19 @@ The raspberry pi can still be powered the same way you usually do (5V USB).Both 
 ### GPIO Pins:
 There is no *special* order for these pins, I just chose them as I wired up the display. It will be possible however, to use different pins if you so wish.
 
-| GPIO Pin | Display Pin |
-|:--------:|:-----------:|
-| 4        | EN          |
-| 7        | A           |
-| 8        | B           |
-| 9        | C           |
-| 10       | D           |
-| 17       | R1          |
-| 18       | S           |
-| 21 (22 on R2 boards)      | R2          |
-| 23       | L           |
-| 24       | G2          |
-| 25       | G1          |
+| GPIO Pin | WiringPi Pin | Display Pin |
+|:--------:|:------------:|:-----------:|
+| 4        | 7            | EN          |
+| 7        | 11           |A           |
+| 8        | 10           |B           |
+| 9        | 13           |C           |
+| 10       | 12           |D           |
+| 17       | 0            |R1          |
+| 18       | 1            |S           |
+| 21 (22 on R2 boards)      | 3            |R2          |
+| 23       | 4            |L           |
+| 24       | 5            |G2          |
+| 25       | 6            |G1          |
 
 
 Protocol
@@ -95,6 +95,11 @@ To Enable the display
 
 
 ### Using the Display
+
+The display will only show two of of the 32 rows of LEDs at any one time, once those rows have been displayed, the next two must be displayed, and so on. There is protective circuitry in the display to prevent it if it is cycled to slowly.
+
+The display should be considered ad pixles 0-63 (x direction, 0 being the left-most column) and pixels 0-31 (y direction, 0 being the top-most row). 
+
 
 
 
