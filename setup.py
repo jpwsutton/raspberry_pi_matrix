@@ -6,14 +6,14 @@ except:
 config = {
     'description': 'Raspberry Pi Matrix',
     'author': 'James sutton',
-    'url': 'https://github.com/jpwsutton/raspberry-pi-matrix',
-    'download_url': 'https://github.com/jpwsutton/raspberry-pi-matrix',
+    'url': 'https://github.com/jpwsutton/raspberry_pi_-matrix',
+    'download_url': 'https://github.com/jpwsutton/raspberry_pi_matrix',
     'author_email': 'code@jsutton.co.uk',
     'version': '0.1',
     'install_requires': [],
-    'packages': ['matrix'],
+    'packages': ['raspberry_pi_matrix'],
     'scripts': [],
-    'name': 'raspberry-pi-matrix'
+    'name': 'raspberry_pi_matrix'
 }
 
 setup(**config)
